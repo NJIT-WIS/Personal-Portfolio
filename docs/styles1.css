@@ -15,14 +15,13 @@ body {
 }
 
 .Navbar {
-  width: 630px;
+  width: 475px;
   height: 44px;
   top: 118px;
   position: absolute;
   border: 2px solid black;
 }
 
-.Skills,
 .Contact,
 .AboutMeText,
 .Projects {
@@ -36,17 +35,14 @@ body {
   word-wrap: break-word;
 }
 
-.Skills {
-  left: 210px;
-}
 .Contact {
-  left: 515px;
+  left: 375px;
 }
 .AboutMeText {
   left: 0px;
 }
 .Projects {
-  left: 347px;
+  left: 200px;
 }
 
 .AboutMeContent {
