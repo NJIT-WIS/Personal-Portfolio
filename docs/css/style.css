@@ -1,0 +1,152 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, Arial, sans-serif;
+  background: #87ceeb;
+}
+
+.LandingPage {
+  width: 100%;
+  position: relative;
+}
+
+.Navbar {
+  width: 475px;
+  height: 44px;
+  position: absolute;
+  top: 130px;
+  left: 0;
+  right: 0; /* Set both left and right to 0 to center horizontally */
+  margin: 0 auto;
+  border: 2px solid black;
+  justify-content: center;
+}
+
+.NavItem {
+  position: absolute;
+  color: #800080;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.NavItem:nth-child(1) {
+  width: 165px;
+  left: 0px;
+}
+
+.NavItem:nth-child(2) {
+  width: 165px;
+  left: 210px;
+}
+
+.NavItem:nth-child(3) {
+  width: 223px;
+  left: 347px;
+}
+
+.Hero {
+  width: 1088.5px;
+  height: 319px;
+  position: absolute;
+  top: 280px;
+  left: 100.5px;
+}
+
+.HeroText {
+  position: absolute;
+  width: 557px;
+  height: 250px;
+}
+
+.MainText {
+  color: #800080;
+  font-size: 70px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.SubText {
+  color: #800080;
+  font-size: 40px;
+  font-weight: 700;
+  position: absolute;
+  top: 167px;
+}
+
+.HeroImage {
+  position: absolute;
+  width: 446px;
+  height: 319px;
+  left: 642.5px;
+}
+
+.ContactSection {
+  width: 1035px;
+  height: 464px;
+  position: absolute;
+  top: 682px;
+  left: 79px;
+}
+.CenterText {
+  justify-content: center;
+}
+
+.ContactHeader {
+  width: 348px;
+  height: 159px;
+  position: absolute;
+  text-align: center;
+  color: #ff0000;
+  font-size: 55px;
+  line-height: 27.5px;
+}
+
+.ContactInfo {
+  width: 200px;
+  height: 315px;
+  position: absolute;
+  top: 149px;
+  font-size: 20px;
+  color: #800080;
+  left: 80px;
+}
+
+.EmailButton,
+.SubmitButton {
+  position: absolute;
+  width: 618px;
+  height: 91px;
+  background: #d9d9d9;
+  border-radius: 90px;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 91px; /* Vertically center the text by matching the line-height with the button height */
+  letter-spacing: 1.6px;
+  text-align: left; /* Align the text to the left */
+}
+
+.EmailButton {
+  left: 417px;
+  top: 112px;
+}
+
+.SubmitButton {
+  width: 257px;
+  left: 417px;
+  top: 224px;
+}
+
+.ResumeText {
+  position: absolute;
+  top: 0px;
+  left: 431px;
+  color: #800080;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 27.5px;
+  letter-spacing: 3px;
+}

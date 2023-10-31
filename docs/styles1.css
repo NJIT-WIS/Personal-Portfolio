@@ -1,0 +1,215 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #87ceeb;
+}
+
+.AboutMe {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: #87ceeb;
+  display: flex; /* Make the container a flex container */
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+}
+
+.Navbar {
+  width: 630px;
+  height: 44px;
+  top: 118px;
+  position: absolute;
+  border: 2px solid black;
+}
+
+.Skills,
+.Contact,
+.AboutMeText,
+.Projects {
+  position: absolute;
+  height: 44px;
+  color: #800080;
+  font-size: 30px;
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: 27.5px;
+  word-wrap: break-word;
+}
+
+.Skills {
+  left: 210px;
+}
+.Contact {
+  left: 515px;
+}
+.AboutMeText {
+  left: 0px;
+}
+.Projects {
+  left: 347px;
+}
+
+.AboutMeContent {
+  width: 1042px;
+  height: 579px;
+
+  top: 234px;
+  position: absolute;
+}
+
+.AboutMeTitle {
+  position: absolute;
+  width: 287px;
+  height: 66px;
+  left: 410px;
+  top: 0px;
+  color: #ff0000;
+  font-size: 55px;
+  font-family: Outfit;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 55px;
+  word-wrap: break-word;
+}
+
+.Rectangle3970 {
+  width: 346px;
+  height: 13px;
+  left: 350px;
+  top: 65px;
+  position: absolute;
+  background: #d9d9d9;
+}
+
+.MajorInformationSystems,
+.EducationNewJerseyInstituteOfTechnology {
+  position: absolute;
+  text-align: center;
+  color: #800080;
+  font-size: 35px;
+  font-family: Outfit;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 35px;
+  word-wrap: break-word;
+}
+
+.MajorInformationSystems {
+  left: 82px;
+  top: 147px;
+  width: 285px;
+  height: 156px;
+}
+
+.EducationNewJerseyInstituteOfTechnology {
+  left: 603px;
+  top: 125px;
+  width: 439px;
+  height: 158px;
+}
+
+.Image2 {
+  width: 300px;
+  height: 300px;
+  left: 675px;
+  top: 279px;
+  position: absolute;
+}
+
+.Laptop1 {
+  width: 473px;
+  height: 229px;
+  left: 0px;
+  top: 315px;
+  position: absolute;
+}
+
+/* CSS for Skill Bars and Titles */
+/* ... (Previous CSS rules) */
+
+.SkillsSection {
+  width: 940px;
+  height: 665px;
+  left: 79.5px;
+  top: 885px;
+  position: absolute;
+}
+
+.SkillsTitle {
+  position: absolute;
+  width: 332.24px;
+  height: 66px;
+  left: 370px;
+  top: -60px;
+  text-align: center;
+  color: #ff0000;
+  font-size: 55px;
+  font-family: Outfit;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 55px;
+  word-wrap: break-word;
+}
+
+.Rectangle3971 {
+  width: 346px;
+  height: 13px;
+  left: 370px;
+  top: 6px; /* Adjusted to be just under the SkillsTitle */
+  position: absolute;
+  background: #d9d9d9;
+}
+
+.SkillBar {
+  position: relative;
+  width: 721.21px;
+  height: 46px;
+  left: 215.32px;
+  background: #f01818;
+  border-radius: 90px;
+  margin: 20px 0;
+}
+.SkillBarSection {
+  margin-top: 80px;
+}
+
+.SkillTitle {
+  position: absolute;
+  width: 213px;
+  height: 92px;
+
+  text-align: center;
+  color: #800080;
+  font-size: 35px;
+  font-family: Outfit;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 35px;
+  word-wrap: break-word;
+}
+
+.SkillProgress {
+  width: 464px;
+  height: 46px;
+  left: 213px;
+  background: #21f991;
+  border-radius: 90px;
+}
+
+.SkillProgressBar {
+  height: 100%;
+  width: 0;
+  background: #21f991;
+  border-radius: 90px;
+}
+
+/* Define specific skill progress bars */
+.SQL .SkillProgressBar {
+  width: 50%; /* Example value, adjust as needed */
+}
+
+.MicrosoftAccess .SkillProgressBar {
+  width: 70%; /* Example value, adjust as needed */
+}
+
+/* ... (Define progress for other skills) */
