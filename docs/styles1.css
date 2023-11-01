@@ -58,34 +58,6 @@ body {
   margin-bottom: 80px;
 }
 
-.AboutMeTitle {
-  position: absolute;
-  width: 287px;
-  height: 66px;
-  left: 410px;
-  top: 0px;
-  color: #ff0000;
-  font-size: 55px;
-  font-family: Outfit;
-  font-weight: 400;
-  text-transform: capitalize;
-  line-height: 55px;
-  word-wrap: break-word;
-  margin: 0 auto;
-  justify-content: center;
-}
-
-.Rectangle3970 {
-  width: 346px;
-  height: 13px;
-  left: 350px;
-  top: 65px;
-  position: absolute;
-  background: #d9d9d9;
-  margin: 0 auto;
-  justify-content: center;
-}
-
 .MajorInformationSystems,
 .EducationNewJerseyInstituteOfTechnology {
   position: absolute;
@@ -132,21 +104,12 @@ body {
 /* CSS for Skill Bars and Titles */
 /* ... (Previous CSS rules) */
 
-.SkillsSection {
-  width: 940px;
-  height: 665px;
-  left: 79.5px;
-  top: 885px;
+.AboutMeTitle {
   position: absolute;
-}
-
-.SkillsTitle {
-  position: absolute;
-  width: 332.24px;
+  width: 287px;
   height: 66px;
-  left: 370px;
-  top: -60px;
-  text-align: center;
+  left: 410px;
+  top: 0px;
   color: #ff0000;
   font-size: 55px;
   font-family: Outfit;
@@ -154,15 +117,60 @@ body {
   text-transform: capitalize;
   line-height: 55px;
   word-wrap: break-word;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.Rectangle3970 {
+  width: 346px;
+  height: 13px;
+  left: 350px;
+  top: 65px;
+  position: absolute;
+  background: #d9d9d9;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.SkillsSection {
+  width: 100%;
+
+  top: 885px;
+  position: absolute;
+}
+.SkillsTitle {
+  position: absolute;
+  width: 332.24px;
+  height: 66px;
+  left: 50%;
+  top: 0px;
+
+  color: #ff0000;
+  font-size: 55px;
+  font-family: Outfit;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 55px;
+  word-wrap: break-word;
+  margin: 0 auto;
+  justify-content: center;
+  margin-bottom: 40px;
+  border: black solid 2px;
+  transform: translateX(-50%);
+  text-align: center;
 }
 
 .Rectangle3971 {
   width: 346px;
   height: 13px;
-  left: 370px;
-  top: 6px; /* Adjusted to be just under the SkillsTitle */
+  left: 50%;
+  top: 55px; /* Adjusted to be just under the SkillsTitle */
   position: absolute;
   background: #d9d9d9;
+  margin: 0 auto;
+  justify-content: center;
+  border: black solid 2px;
+  transform: translateX(-50%);
 }
 
 .SkillBar {
