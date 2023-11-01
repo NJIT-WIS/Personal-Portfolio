@@ -13,6 +13,7 @@ body {
   justify-content: center; /* Center the content horizontally */
   align-items: center; /* Center the content vertically */
   padding-bottom: 100px;
+  margin: 0 auto;
 }
 
 .Navbar {
@@ -108,7 +109,8 @@ body {
   position: absolute;
   width: 287px;
   height: 66px;
-  left: 410px;
+  transform: translateX(-50%);
+  left: 50%;
   top: 0px;
   color: #ff0000;
   font-size: 55px;
@@ -118,13 +120,14 @@ body {
   line-height: 55px;
   word-wrap: break-word;
   margin: 0 auto;
-  justify-content: center;
+  text-align: center;
 }
 
 .Rectangle3970 {
   width: 346px;
   height: 13px;
-  left: 350px;
+  transform: translateX(-50%);
+  left: 50%;
   top: 65px;
   position: absolute;
   background: #d9d9d9;
@@ -182,19 +185,58 @@ body {
   top: 100px;
 }
 
-.SkillBar {
+.EachSkillBar {
   position: relative;
+  display: flex;
+  align-items: center; /* Align items vertically */
+
+  margin: 25px;
+}
+
+.SkillProgressBase {
   width: 721.21px;
   height: 46px;
-
   background: #f01818;
   border-radius: 90px;
-  margin: 20px 0;
+}
+
+.SkillProgressBarGreenExcel {
+  height: 46px;
+  width: 80%;
+  background: #21f991;
+  border-radius: 90px;
+}
+.SkillProgressBarGreenMicrosoftAccess {
+  height: 46px;
+  width: 70%;
+  background: #21f991;
+  border-radius: 90px;
+}
+
+.SkillProgressBarGreenSQL {
+  height: 46px;
+  width: 70%;
+  background: #21f991;
+  border-radius: 90px;
+}
+
+.SkillProgressBarGreenPython {
+  height: 46px;
+  width: 60%;
+  background: #21f991;
+  border-radius: 90px;
+}
+
+.SkillProgressBarGreenTableau {
+  height: 46px;
+  width: 60%;
+  background: #21f991;
+  border-radius: 90px;
 }
 
 .SkillTitle {
   position: absolute;
-  width: 213px;
+  width: 300px;
   height: 92px;
 
   text-align: center;
@@ -205,6 +247,8 @@ body {
   text-transform: capitalize;
   line-height: 35px;
   word-wrap: break-word;
+  top: 10px;
+  left: 20px;
 }
 
 .SkillProgress {
@@ -213,22 +257,5 @@ body {
 
   background: #21f991;
   border-radius: 90px;
+  top: 90px;
 }
-
-.SkillProgressBar {
-  height: 100%;
-  width: 0;
-  background: #21f991;
-  border-radius: 90px;
-}
-
-/* Define specific skill progress bars */
-.SQL .SkillProgressBar {
-  width: 50%; /* Example value, adjust as needed */
-}
-
-.MicrosoftAccess .SkillProgressBar {
-  width: 70%; /* Example value, adjust as needed */
-}
-
-/* ... (Define progress for other skills) */
