@@ -153,7 +153,7 @@ body {
   line-height: 55px;
   word-wrap: break-word;
   margin: 0 auto;
-  justify-content: center;
+
   margin-bottom: 40px;
   border: black solid 2px;
   transform: translateX(-50%);
@@ -171,19 +171,25 @@ body {
   justify-content: center;
   border: black solid 2px;
   transform: translateX(-50%);
+  margin-bottom: 50px;
+}
+
+.SkillBarSection {
+  position: absolute;
+  justify-content: center;
+  transform: translateX(-50%);
+  left: 50%;
+  top: 100px;
 }
 
 .SkillBar {
   position: relative;
   width: 721.21px;
   height: 46px;
-  left: 215.32px;
+
   background: #f01818;
   border-radius: 90px;
   margin: 20px 0;
-}
-.SkillBarSection {
-  margin-top: 80px;
 }
 
 .SkillTitle {
@@ -204,7 +210,7 @@ body {
 .SkillProgress {
   width: 464px;
   height: 46px;
-  left: 213px;
+
   background: #21f991;
   border-radius: 90px;
 }
