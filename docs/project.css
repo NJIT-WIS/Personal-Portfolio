@@ -2,73 +2,18 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-}
-
-.main-container {
-  margin: auto;
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-}
-.SubmitButton {
-  width: 257px;
-  height: 91px;
-  left: 16px;
-  top: 55px;
-  position: absolute;
-}
-
-.Rectangle3969 {
-  width: 257px;
-  height: 91px;
-  left: 0px;
-  top: 0px;
-  position: absolute;
-  background: #d9d9d9;
-  border-radius: 90px;
-}
-
-.BackToHomepage {
-  width: 202px;
-  height: 40px;
-  left: 43px;
-  top: 31px;
-  position: absolute;
-  color: black;
-  font-size: 16px;
-  font-family: Outfit;
-  font-weight: 700;
-  text-transform: uppercase;
-  line-height: 27.5px;
-  letter-spacing: 1.6px;
-  word-wrap: break-word;
-}
-
-.navbar {
-  display: flex;
-  justify-content: space-around;
-  background-color: #800080;
-  padding: 10px 0;
-  border-radius: 10px;
-}
-
-.navbar-item {
-  color: black;
-  font-size: 30px;
-}
-
-.projects-container {
-  text-align: center;
-}
-
-.projects-header {
-  margin: 40px 0;
+  background: #87ceeb;
+  width: 100%;
 }
 
 .projects-title {
   color: #ff0000;
   font-size: 55px;
-  display: inline-block;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  padding-bottom: 30px;
+  padding-top: 30px;
 }
 
 .underline {
@@ -76,49 +21,40 @@ body {
   height: 13px;
   background: #d9d9d9;
   display: block;
+  margin: auto;
 }
 
-.project {
-  background-color: #87ceeb;
-  margin-bottom: 30px;
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
   padding: 20px;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
-.project-text {
-  max-width: 50%;
-  color: #800080;
+.card {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
 }
 
-.project-text h2 {
-  font-size: 58px;
-  margin: 0;
-  font-weight: 700;
-  text-transform: capitalize;
-}
-
-.project-text p {
-  font-size: 24px;
-  margin: 10px 0 0;
-  font-weight: 400;
-}
-
-.project-image {
-  max-width: 40%;
+.card img {
+  width: 100%;
   height: auto;
-  border-radius: 10px;
+  display: block;
 }
 
-@media (max-width: 768px) {
-  .project {
-    flex-direction: column;
-  }
+.card h3 {
+  margin: 10px;
+}
 
-  .project-text,
-  .project-image {
-    max-width: 100%;
+.card p {
+  margin: 10px;
+  color: #333;
+}
+
+@media screen and (max-width: 600px) {
+  .grid-container {
+    grid-template-columns: 1fr;
   }
 }
