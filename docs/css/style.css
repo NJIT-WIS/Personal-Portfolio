@@ -1,5 +1,5 @@
 :root {
-  --background-color: #2c2660;
+  --background-color: #87ceeb;
   --base-link-color: #ffffff;
   --primary-color: #8cab0a;
   --secondary-color: #060;
@@ -56,6 +56,9 @@ header {
   margin-right: auto;
 }
 
+.hero-text {
+  margin-left: 35px;
+}
 .menu {
   display: flex;
   justify-content: flex-end;
@@ -70,8 +73,9 @@ header {
 .hero {
   display: flex;
   justify-content: space-between;
-  background: var(--background-color) url(../images/computer.png) no-repeat
-    right center;
+  background: var(--background-color) url(../images/data_analyst.jpg) no-repeat
+    calc(100% - 50px) center;
+  background-size: 600px 400px;
   height: 473px;
   font: 2rem / 1.6 var(--font-primary);
 }
@@ -79,10 +83,12 @@ header {
 .hero h1 {
   margin-top: 5rem;
   width: 35rem;
+  color: #800080;
 }
 
 .sub-text {
   width: 50rem;
+  color: #800080;
 }
 
 footer {
@@ -301,18 +307,18 @@ footer {
   background-color: var(--testimonial-color2);
 }
 
-a.pill-link {
-  display: inline-block;
-  padding: 10px 20px;
-  border-radius: 25px;
-  background-color: var(--primary-color);
-  color: #ffffff;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-}
-
 .a.pill-link:hover {
   background-color: var(--accent-color);
+}
+
+a.pill-link {
+  display: inline-block;
+  padding: 15px 20px;
+  border-radius: 25px;
+  background-color: #d9d9d9;
+  color: black;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
 }
 
 a.alt-pill-link {
