@@ -46,6 +46,7 @@ body {
 
 .card h3 {
   margin: 10px;
+  text-align: center;
 }
 
 .card p {
