@@ -70,7 +70,8 @@ header {
 .hero {
   display: flex;
   justify-content: space-between;
-  background: var(--background-color) url(../images/computer.png) no-repeat;
+  background: var(--background-color) url(../images/computer.png) no-repeat
+    right center;
   height: 473px;
   font: 2rem / 1.6 var(--font-primary);
 }
