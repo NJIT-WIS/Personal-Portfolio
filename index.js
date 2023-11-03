@@ -15,6 +15,10 @@ app.get("/project", (req, res) => {
   res.sendFile(path.join(__dirname, "docs", "project.html"));
 });
 
+app.get("/aboutme", (req, res) => {
+  res.sendFile(path.join(__dirname, "docs", "aboutme.html"));
+});
+
 // Start the server
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
