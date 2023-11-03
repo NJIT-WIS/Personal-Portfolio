@@ -54,6 +54,7 @@ header {
 
 .logo {
   margin-right: auto;
+  color: #ffd700;
 }
 
 .hero-text {
@@ -83,12 +84,12 @@ header {
 .hero h1 {
   margin-top: 5rem;
   width: 35rem;
-  color: #800080;
+  color: #ffd700;
 }
 
 .sub-text {
   width: 50rem;
-  color: #800080;
+  color: #ffd700;
 }
 
 footer {
@@ -315,19 +316,20 @@ a.pill-link {
   display: inline-block;
   padding: 15px 20px;
   border-radius: 25px;
-  background-color: #d9d9d9;
-  color: black;
+  background-color: #e60023;
+  color: #ffffff;
   text-decoration: none;
   transition: background-color 0.3s ease;
 }
 
 a.alt-pill-link {
-  border: lightblue solid 1px;
-  background-color: none;
-  border-radius: 25px;
+  display: inline-block;
   padding: 15px 20px;
-  border: 2px solid lightblue;
-  background: rgba(161, 214, 214, 0);
+  border-radius: 25px;
+  background-color: #e60023;
+  color: #ffffff;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
 }
 
 @media screen and (max-width: 1024px) {
