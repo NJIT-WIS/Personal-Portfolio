@@ -11,8 +11,8 @@ app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "docs", "index.html"));
 });
 
-app.get("/aboutme", (req, res) => {
-  res.sendFile(path.join(__dirname, "docs", "aboutme.html"));
+app.get("/project", (req, res) => {
+  res.sendFile(path.join(__dirname, "docs", "project.html"));
 });
 
 // Start the server

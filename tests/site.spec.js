@@ -2,9 +2,9 @@ const { test, expect } = require("@playwright/test");
 
 const websiteURL = "http://localhost:3000";
 
-const aboutmeURL = "http://localhost:3000/aboutme";
+const aboutmeURL = "http://localhost:3000/project";
 // Expected constants
-const expectedTitle = "Resume Portfolio";
+const expectedTitle = "Resume Portfolio for Midterm";
 
 test.beforeEach(async ({ page }) => {
   await page.goto(websiteURL);
@@ -13,6 +13,11 @@ test.beforeEach(async ({ page }) => {
 test("Check Page Title", async ({ page }) => {
   const title = await page.title();
   expect(title).toBe(expectedTitle);
+});
+
+test("Hero Section", async ({ page }) => {
+  await page.goto(websiteURL);
+  await expect(page.locator(".logo")).toBeVisible();
 });
 
 test("Check SEO Meta Description", async ({ page }) => {
@@ -33,50 +38,31 @@ test("Check SEO Meta Keywords", async ({ page }) => {
   await expect(metaKeywords).not.toBe("");
 });
 
-test("Check Navbar", async ({ page }) => {
+test("Check Responsive Meta Tag", async ({ page }) => {
   await page.goto(websiteURL);
-  await expect(page.locator(".Navbar")).toBeVisible();
-});
-
-test("Check Hero Image", async ({ page }) => {
-  await page.goto(websiteURL);
-  await expect(page.locator(".HeroImage")).toBeVisible();
-});
-
-test("Check Hero Text", async ({ page }) => {
-  await page.goto(websiteURL);
-  await expect(page.locator(".HeroText")).toBeVisible();
-});
-
-test("Test for Skills Section", async ({ page }) => {
-  await page.goto(aboutmeURL);
-  await expect(page.locator(".SkillsSection")).toBeVisible();
-});
-
-test("Test for About Me Content", async ({ page }) => {
-  await page.goto(aboutmeURL);
-  await expect(page.locator(".AboutMeContent")).toBeVisible();
-});
-
-test("Check SEO Meta Description(AboutMe", async ({ page }) => {
-  await page.goto(aboutmeURL);
-  const metaDescription = await page.getAttribute(
-    'meta[name="description"]',
+  const viewportMeta = await page.getAttribute(
+    'meta[name="viewport"]',
     "content"
   );
-  await expect(metaDescription).not.toBe("");
+  await expect(viewportMeta).toBe("width=device-width, initial-scale=1");
 });
 
-test("Check SEO Meta Keywords(AboutMe)", async ({ page }) => {
-  await page.goto(aboutmeURL);
-  const metaKeywords = await page.getAttribute(
-    'meta[name="keywords"]',
-    "content"
-  );
-  await expect(metaKeywords).not.toBe("");
+test("Hero Section: Check Hero", async ({ page }) => {
+  await page.goto(websiteURL);
+  await expect(page.locator(".hero-text")).toBeVisible();
 });
 
-test("Check Navbar(AboutMe)", async ({ page }) => {
-  await page.goto(aboutmeURL);
-  await expect(page.locator(".Navbar")).toBeVisible();
+test("Hero Section: Check Header", async ({ page }) => {
+  await page.goto(websiteURL);
+  await expect(page.locator(".hero-text h1")).toBeVisible();
+});
+
+test("Hero Section: Subtext", async ({ page }) => {
+  await page.goto(websiteURL);
+  await expect(page.locator(".sub-text")).toBeVisible();
+});
+
+test("Hero Section: Check for View Page Button", async ({ page }) => {
+  await page.goto(websiteURL);
+  await expect(page.locator(".pill-link")).toBeVisible();
 });
