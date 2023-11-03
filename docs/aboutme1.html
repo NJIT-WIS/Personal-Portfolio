@@ -1,177 +1,291 @@
-<!DOCTYPE html> <!--Defines the document to be HTML5-->
+<!DOCTYPE html>
+<!--Defines the document to be HTML5-->
 
-<html lang="en"> <!--Opens the html tag and sets the language of the document to English-->
+<html lang="en">
+  <!--Opens the html tag and sets the language of the document to English-->
 
-<head> <!-- Opens the head tag which contains meta information about the document -->
+  <head>
+    <!-- Opens the head tag which contains meta information about the document -->
 
-    <meta charset="UTF-8"> <!--Sets the character encoding for the document-->
+    <meta charset="UTF-8" />
+    <!--Sets the character encoding for the document-->
 
-    <meta name="description" content="This is Brian's Resume, it includes my objective, education, related coursework, work experience, activities & leadership, and achievements "> <!-- Description of the webpage, often used by search engines -->
+    <meta
+      name="description"
+      content="This is Brian's Resume, it includes my objective, education, related coursework, work experience, activities & leadership, and achievements "
+    />
+    <!-- Description of the webpage, often used by search engines -->
 
-    <meta name="keywords" content="resume, jobs, career"> <!-- Defines keywords for search engines -->
+    <meta name="keywords" content="resume, jobs, career" />
+    <!-- Defines keywords for search engines -->
 
-    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Controls the viewport on mobile devices, making the website responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Controls the viewport on mobile devices, making the website responsive -->
 
-    <title>Brian's Resume</title> <!-- The title of the document, appears in browser tab -->
+    <title>Brian's Resume</title>
+    <!-- The title of the document, appears in browser tab -->
 
-    <link rel="stylesheet" type="text/css" href="css/main.css"> <!-- Links the main css file for styles -->
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <!-- Links the main css file for styles -->
 
     <!-- Preloads font awesome stylesheet for icons, this helps speed up loading as the stylesheet is loaded in the background -->
-    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
-        as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript> <!-- Provides a fallback in case JavaScript is disabled -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link
+      rel="preload"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript>
+      <!-- Provides a fallback in case JavaScript is disabled -->
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      />
     </noscript>
 
     <!-- Preloads the Google fonts for the webpage, helps with performance -->
-    <link rel="preload"
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&family=Work+Sans:wght@400;500&display=swap"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript>
+      <!-- Provides a fallback in case JavaScript is disabled -->
+      <link
+        rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&family=Work+Sans:wght@400;500&display=swap"
-        as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript> <!-- Provides a fallback in case JavaScript is disabled -->
-        <link rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&family=Work+Sans:wght@400;500&display=swap">
+      />
     </noscript>
 
     <style>
-       .sidebar {
-        color:black
-       }
-       .subheading1 {
-    font-size: 1.25em;
-    font-weight: bold;
-}
+      .sidebar {
+        color: black;
+      }
+      .subheading1 {
+        font-size: 1.25em;
+        font-weight: bold;
+      }
 
-.subheading2 {
-    font-size: 1em;
-    font-weight: bold;
-}
-
+      .subheading2 {
+        font-size: 1em;
+        font-weight: bold;
+      }
     </style>
-</head> <!-- Closes the head tag -->
+  </head>
+  <!-- Closes the head tag -->
 
-<body> <!-- Opens the body tag, this is where the content of the webpage goes -->
+  <body>
+    <!-- Opens the body tag, this is where the content of the webpage goes -->
 
-    <div class="container"> <!-- Container class will be used to style all the content within it -->
+    <div class="container">
+      <!-- Container class will be used to style all the content within it -->
 
-        <aside class="sidebar" role="complementary"> <!-- The aside tag is used for content that is related but separate from the main content, often as a sidebar -->
+      <aside class="sidebar" role="complementary">
+        <!-- The aside tag is used for content that is related but separate from the main content, often as a sidebar -->
 
-            <div class="sidebar-top"> <!-- A div to contain all elements on the top of the sidebar -->
+        <div class="sidebar-top">
+          <!-- A div to contain all elements on the top of the sidebar -->
 
-                <div class="portrait"> <!-- A div to hold the profile picture -->
-                    <img src="images/portrait.png" alt="Portrait of Brian Maina, Data Analyst"> <!-- The profile picture itself -->
-                </div>
-                <h2>Brian Maina</h2> <!-- Name of the resume owner -->
-                <h3>Data Analyst</h3> <!-- Job title of the resume owner -->
-                <div class="links"> <!-- A div to hold all social media and contact links -->
-                    <!-- Each link also has an aria-label attribute to describe the link to screen readers -->
-                    <a href="https://www.linkedin.com/in/brian-maina25/" aria-label="Brian Maina's LinkedIn profile"><i
-                            class="fab fa-linkedin"></i></a> <!-- LinkedIn link -->
-                    <a href="https://twitter.com/johndoe" aria-label="John Doe's Twitter profile"><i
-                            class="fab fa-twitter"></i></a> <!-- Twitter link -->
-                    <a href="https://github.com/Crash105" aria-label="Brian Maina GitHub profile"><i
-                            class="fab fa-github"></i></a> <!-- Github link -->
-                    <a href="bmm49@njit.edu" aria-label="Email Brian Maina"><i
-                            class="fab fas fa-envelope"></i></a> <!-- Email link -->
-                    <a href="tel:+1234567890" aria-label="Call John Doe"><i class="fab fas fa-phone"></i></a> <!-- Phone link -->
-            </div> <!-- Closes the links div -->
-            <section class="sidebar-bottom"> <!-- A section to hold the resume objective -->
-                <h4>Objective</h4> <!-- Title of the objective section -->
-                <p>As an Information Systems graduating senior, I am currently looking for an entry level Data Analyst position. With robust interpersonal capabilities, I excel in both solo and collaborative settings.</p> <!-- Objective text -->
-            </section> <!-- Closes the sidebar-bottom section -->
-            </div> <!-- Closes the sidebar-top div -->
+          <div class="portrait">
+            <!-- A div to hold the profile picture -->
+            <img
+              src="images/portrait.png"
+              alt="Portrait of Brian Maina, Data Analyst"
+            />
+            <!-- The profile picture itself -->
+          </div>
+          <h2>Brian Maina</h2>
+          <!-- Name of the resume owner -->
+          <h3>Data Analyst</h3>
+          <!-- Job title of the resume owner -->
+          <div class="links">
+            <!-- A div to hold all social media and contact links -->
+            <!-- Each link also has an aria-label attribute to describe the link to screen readers -->
+            <a
+              href="https://www.linkedin.com/in/brian-maina25/"
+              aria-label="Brian Maina's LinkedIn profile"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <!-- LinkedIn link -->
+            <a
+              href="https://twitter.com/johndoe"
+              aria-label="John Doe's Twitter profile"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <!-- Twitter link -->
+            <a
+              href="https://github.com/Crash105"
+              aria-label="Brian Maina GitHub profile"
+              ><i class="fab fa-github"></i
+            ></a>
+            <!-- Github link -->
+            <a href="bmm49@njit.edu" aria-label="Email Brian Maina"
+              ><i class="fab fas fa-envelope"></i
+            ></a>
+            <!-- Email link -->
+            <a href="tel:+1234567890" aria-label="Call John Doe"
+              ><i class="fab fas fa-phone"></i
+            ></a>
+            <!-- Phone link -->
+          </div>
+          <!-- Closes the links div -->
+          <section class="sidebar-bottom">
+            <!-- A section to hold the resume objective -->
+            <h4>Objective</h4>
+            <!-- Title of the objective section -->
+            <p>
+              As an Information Systems graduating senior, I am currently
+              looking for an entry level Data Analyst position. With robust
+              interpersonal capabilities, I excel in both solo and collaborative
+              settings.
+            </p>
+            <!-- Objective text -->
+          </section>
+          <!-- Closes the sidebar-bottom section -->
+        </div>
+        <!-- Closes the sidebar-top div -->
+      </aside>
+      <!-- Closes the aside tag -->
 
-        </aside> <!-- Closes the aside tag -->
+      <main class="main-content" role="main">
+        <!-- The main content of the webpage, where the major content is placed -->
 
-        <main class="main-content" role="main"> <!-- The main content of the webpage, where the major content is placed -->
+        <header role="banner">
+          <!-- Header of the main content -->
+          <h1>Embarking on Every Code Adventure</h1>
+          <!-- Title of the resume -->
+        </header>
 
-            <header role="banner"> <!-- Header of the main content -->
-                <h1>Embarking on Every Code Adventure</h1> <!-- Title of the resume -->
-            </header>
+        <section class="skills-section">
+          <!-- A section to list all skills -->
+          <h2>Skills</h2>
+          <!-- Title of the skills section -->
+          <ul class="skill-list">
+            <li><i class="fab fa-html5 fa-skill-icon"></i> HTML5</li>
+            <li><i class="fab fa-css3-alt fa-skill-icon"></i> CSS3</li>
+            <li><i class="fab fa-js-square fa-skill-icon"></i> JavaScript</li>
+            <li><i class="fab fa-java fa-skill-icon"></i> Java</li>
+            <!-- Corrected icon for Java -->
+            <li><i class="fas fa-database fa-skill-icon"></i> SQL</li>
+            <!-- Corrected text for SQL -->
+            <li><i class="fab fa-react fa-skill-icon"></i> React.js</li>
+            <li><i class="fab fa-python fa-skill-icon"></i> Python</li>
+            <li><i class="fab fa-php fa-skill-icon"></i> PHP</li>
+            <li><i class="fab fa-git-square fa-skill-icon"></i> Git</li>
+            <!-- Separated Git and GitHub -->
+            <li><i class="fab fa-github-square fa-skill-icon"></i> GitHub</li>
+            <!-- Separate icon for GitHub -->
 
-            <section class="skills-section"> <!-- A section to list all skills -->
-                <h2>Skills</h2> <!-- Title of the skills section -->
-                <ul class="skill-list"> <!-- Unordered list to contain all skills -->
-                    <li><i class="fab fa-html5 fa-skill-icon"></i> HTML5</li> <!-- Each skill -->
-                    <li><i class="fab fa-css3-alt fa-skill-icon"></i> CSS3</li>
-                    <li><i class="fab fa-js-square fa-skill-icon"></i> JavaScript</li>
-                    <li><i class="fab fa-node-js fa-skill-icon"></i> Java</li>
-                    <li><i class="fas fa-database fa-skill-icon"></i> C#</li>
-                    <li><i class="fab fa-react fa-skill-icon"></i> React.js</li>
-                    <li><i class="fab fa-vuejs fa-skill-icon"></i> sQL</li>
-                    <li><i class="fab fa-python fa-skill-icon"></i> Python</li>
-                    <li><i class="fab fa-php fa-skill-icon"></i> PHP</li>
-                    <li><i class="fas fa-server fa-skill-icon"></i>VSCODE</li>
-                    <li><i class="fab fa-aws fa-skill-icon"></i> Git, GitHub</li>
-                    <li><i class="fab fa-docker fa-skill-icon"></i> Excel</li>
-                </ul> <!-- Closes the skill list -->
-            </section> <!-- Closes the skills section -->
+            <li><i class="fas fa-code fa-skill-icon"></i> VSCode</li>
+            <!-- Changed to a generic code icon for VSCode -->
 
-            <section class="experience-section"> <!-- A section to list work experience -->
-                <h2>Experience</h2> <!-- Title of the experience section -->
-                <h3>Front End Developer | Rutgers Rail Program</h3> <!-- Job title and company -->
+            <li><i class="fas fa-file-excel fa-skill-icon"></i> Excel</li>
+            <!-- Corrected icon for Excel -->
+          </ul>
+        </section>
+        <!-- Closes the skills section -->
 
-                <h4>2023 - Present</h4> <!-- Job duration -->
-                <ul> <!-- Unordered list to contain job details -->
-                    <li>Engineered a responsive validation web page leveraging JavaScript</li> <!-- Each job detail -->
-                    <li>Optimized the Home Page workflow with React Bootstrap integration</li>
-                    <li>Utilizing Python to optimize and streamline systems operations</li>
-                </ul> <!-- Closes the job details list -->
-                <div class = "subheading1">Desk Attendant | New Jersey Institute of Technology Residence Life</div>
-                <div class = "subheading2">2022 - 2022</div>
-                <ul>
-                    <li>Utilized Excel to organize and track student details and dormitory inventory</li>
-                    <li>Oversaw and processed resident request</li>
-                </ul>
-            </section> <!-- Closes the experience section -->
+        <section class="experience-section">
+          <!-- A section to list work experience -->
+          <h2>Experience</h2>
+          <!-- Title of the experience section -->
+          <h3>Front End Developer | Rutgers Rail Program</h3>
+          <!-- Job title and company -->
 
-           
+          <h4>2023 - Present</h4>
+          <!-- Job duration -->
+          <ul>
+            <!-- Unordered list to contain job details -->
+            <li>
+              Engineered a responsive validation web page leveraging JavaScript
+            </li>
+            <!-- Each job detail -->
+            <li>
+              Optimized the Home Page workflow with React Bootstrap integration
+            </li>
+            <li>
+              Utilizing Python to optimize and streamline systems operations
+            </li>
+          </ul>
+          <!-- Closes the job details list -->
+          <div class="subheading1">
+            Desk Attendant | New Jersey Institute of Technology Residence Life
+          </div>
+          <div class="subheading2">2022 - 2022</div>
+          <ul>
+            <li>
+              Utilized Excel to organize and track student details and dormitory
+              inventory
+            </li>
+            <li>Oversaw and processed resident request</li>
+          </ul>
+        </section>
+        <!-- Closes the experience section -->
 
-            <section class="education-section"> <!-- A section to list educational background -->
-                <h2>Education</h2> <!-- Title of the education section -->
-                <h3>B.S. in Information Systems | New Jersey Institute of Technology</h3> <!-- Degree and university -->
-                <h4>2018 - 2023</h4> <!-- Duration of the degree -->
-            </section> <!-- Closes the education section -->
+        <section class="education-section">
+          <!-- A section to list educational background -->
+          <h2>Education</h2>
+          <!-- Title of the education section -->
+          <h3>
+            B.S. in Information Systems | New Jersey Institute of Technology
+          </h3>
+          <!-- Degree and university -->
+          <h4>2018 - 2023</h4>
+          <!-- Duration of the degree -->
+        </section>
+        <!-- Closes the education section -->
 
-            <section class="project-section"> <!-- A section to list project background -->
-                <h2>Project</h2> <!-- Title of the project section -->
-                <h3>Capstone Project: CrunkAI.com Project(Academic Project) | Project Management</h3>
-                <p>Role: Project Manager<br>
-                    -  Resolving issues that may arise, evaluating, project performance, and ensuring sponsor satisfaction
-                    </p>
-                <h3>Web Form Data Integration Project(Academic Project)  | SQL, HTML,CSS, JavaScript, MYSQL, PHP</h3>
-                    <p>
-                     - Designed and implemented a HTML form for user input<br>
-                   
-                  
-                    -  Developed PHP scripts to handle data validation, and secure data interactions
+        <section class="project-section">
+          <!-- A section to list project background -->
+          <h2>Project</h2>
+          <!-- Title of the project section -->
+          <h3>
+            Capstone Project: CrunkAI.com Project(Academic Project) | Project
+            Management
+          </h3>
+          <p>
+            Role: Project Manager<br />
+            - Resolving issues that may arise, evaluating, project performance,
+            and ensuring sponsor satisfaction
+          </p>
+          <h3>
+            Web Form Data Integration Project(Academic Project) | SQL, HTML,CSS,
+            JavaScript, MYSQL, PHP
+          </h3>
+          <p>
+            - Designed and implemented a HTML form for user input<br />
 
-                </p>
-                <h3>Interactive Rock  Paper and Scissors Game (Personal Project) | JavaScript, HTML  </h3>
-             
-                <p>
-                   - Designed and developed an engaging web-based Rock, Paper, Scissor game<br>
-                
-                    - Implemented features to track user wins, providing a dynamic and enjoyable gaming experience
-                </p>
-            </section> <!-- Closes the project section -->
-            <section class = "certification=section">
-                <h2>Certification</h2>
-                 <ul>
-                    <li>
-                        Certified Software Development Associate(IEEE)
-                    </li>
-                    <li>
-                        Certified Scrum Master, Scrum Alliance, 2015
-                    </li>
-                    <li>
-                        CompTIA A+, 2013
-                    </li>
-                 </ul>
+            - Developed PHP scripts to handle data validation, and secure data
+            interactions
+          </p>
+          <h3>
+            Interactive Rock Paper and Scissors Game (Personal Project) |
+            JavaScript, HTML
+          </h3>
 
-            </section>
+          <p>
+            - Designed and developed an engaging web-based Rock, Paper, Scissor
+            game<br />
 
-        </main> <!-- Closes the main content -->
-    </div> <!-- Closes the container -->
-</body> <!-- Closes the body -->
-
-</html> <!-- Closes the HTML -->
+            - Implemented features to track user wins, providing a dynamic and
+            enjoyable gaming experience
+          </p>
+        </section>
+        <!-- Closes the project section -->
+        <section class="certification=section">
+          <h2>Certification</h2>
+          <ul>
+            <li>Certified Software Development Associate(IEEE)</li>
+            <li>Certified Scrum Master, Scrum Alliance, 2015</li>
+            <li>CompTIA A+, 2013</li>
+          </ul>
+        </section>
+      </main>
+      <!-- Closes the main content -->
+    </div>
+    <!-- Closes the container -->
+  </body>
+  <!-- Closes the body -->
+</html>
+<!-- Closes the HTML -->
