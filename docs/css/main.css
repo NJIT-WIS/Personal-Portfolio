@@ -1,6 +1,6 @@
 :root {
-  --color-primary: #023047;
-  --color-secondary: #255f85;
+  --color-primary: ;
+  --color-secondary: #020887;
   --color-accent: #8ac926;
   --hover-color: #88b7d8;
   --base-spacing: 1.5rem;
@@ -41,6 +41,13 @@ body {
   font-size: var(--base-font-size);
   line-height: var(--base-line-height);
 }
+
+.sidebar-bottom {
+  color: red;
+}
+.sidebar-top1 {
+  color: red;
+}
 .container {
   display: flex;
   flex-direction: row-reverse;
@@ -73,6 +80,7 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 0.5rem;
+  color: red;
 }
 .links a {
   color: inherit;
@@ -88,6 +96,7 @@ body {
 .main-content {
   flex: 3;
   padding: var(--section-spacing);
+  color: red;
 }
 .main-content section,
 .main-content header {
