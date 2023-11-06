@@ -172,3 +172,11 @@ test("Check Project Cards", async ({ page }) => {
   const linksCount = await page.locator(".card").count();
   await expect(linksCount).toBeGreaterThan(2);
 });
+
+test("Should have two a[href] elements", async ({ page }) => {
+  await page.goto(aboutmeURL);
+  const links = page.locator("a[href]");
+
+  // Assert that there are exactly two of these elements
+  await expect(links).toHaveCount(2);
+});
