@@ -38,6 +38,22 @@ body {
   overflow: hidden;
 }
 
+.menu {
+  display: flex;
+  justify-content: center;
+
+  gap: 30px;
+
+  margin: auto;
+}
+
+.menu-item {
+  text-align: center;
+  font-size: 25px;
+  text-decoration: none;
+  color: red;
+}
+
 .card img {
   width: 300px;
   height: 350px;
