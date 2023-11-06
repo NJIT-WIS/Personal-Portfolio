@@ -181,8 +181,14 @@ test("Should have two a[href] elements", async ({ page }) => {
   await expect(links).toHaveCount(2);
 });
 
-test("Check Navigation Menu in Header", async ({ page }) => {
+test("Landing Page: Check Navigation Menu in Header", async ({ page }) => {
   await page.goto(websiteURL);
+  const menuItemCount = await page.locator(".menu .menu-item").count();
+  expect(menuItemCount).toBe(3);
+});
+
+test("About Me Page: Check Navigation Menu in Header", async ({ page }) => {
+  await page.goto(resumeURL);
   const menuItemCount = await page.locator(".menu .menu-item").count();
   expect(menuItemCount).toBe(3);
 });
