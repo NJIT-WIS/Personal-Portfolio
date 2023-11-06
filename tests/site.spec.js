@@ -180,3 +180,9 @@ test("Should have two a[href] elements", async ({ page }) => {
   // Assert that there are exactly two of these elements
   await expect(links).toHaveCount(2);
 });
+
+test("Check Navigation Menu in Header", async ({ page }) => {
+  await page.goto(websiteURL);
+  const menuItemCount = await page.locator(".menu .menu-item").count();
+  expect(menuItemCount).toBe(3);
+});
