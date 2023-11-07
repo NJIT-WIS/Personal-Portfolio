@@ -55,14 +55,14 @@ body {
   text-align: center;
   font-size: 25px;
   text-decoration: none;
-  color: #ff6666;
+  color: red;
 }
 
 .sidebar-bottom {
-  color: #ff6666;
+  color: #ffcc00;
 }
 .sidebar-top1 {
-  color: #ff6666;
+  color: #ffcc00;
 }
 .container {
   display: flex;
@@ -96,7 +96,7 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 0.5rem;
-  color: #ff6666;
+  color: #ffcc00;
 }
 .links a {
   color: inherit;
@@ -112,7 +112,7 @@ body {
 .main-content {
   flex: 3;
   padding: var(--section-spacing);
-  color: #ff6666;
+  color: #990000;
 }
 .main-content section,
 .main-content header {
