@@ -36,6 +36,9 @@ body {
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   overflow: hidden;
+  margin: 0.25rem; /* Your base margin */
+  /* For horizontal spacing */
+  margin-right: calc(1rem * 1.618);
 }
 
 .menu {
