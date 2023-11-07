@@ -55,14 +55,14 @@ body {
   text-align: center;
   font-size: 25px;
   text-decoration: none;
-  color: red;
+  color: #ff6666;
 }
 
 .sidebar-bottom {
-  color: red;
+  color: #ff6666;
 }
 .sidebar-top1 {
-  color: red;
+  color: #ff6666;
 }
 .container {
   display: flex;
@@ -96,7 +96,7 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 0.5rem;
-  color: red;
+  color: #ff6666;
 }
 .links a {
   color: inherit;
@@ -112,7 +112,7 @@ body {
 .main-content {
   flex: 3;
   padding: var(--section-spacing);
-  color: red;
+  color: #ff6666;
 }
 .main-content section,
 .main-content header {
