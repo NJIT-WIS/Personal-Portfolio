@@ -192,3 +192,9 @@ test("About Me Page: Check Navigation Menu in Header", async ({ page }) => {
   const menuItemCount = await page.locator(".menu .menu-item").count();
   expect(menuItemCount).toBe(3);
 });
+
+test("Project Page: Check Navigation Menu in Header", async ({ page }) => {
+  await page.goto(resumeURL);
+  const menuItemCount = await page.locator(".menu .menu-item").count();
+  expect(menuItemCount).toBe(3);
+});
