@@ -77,12 +77,12 @@ header {
   justify-content: space-between;
   background: var(--background-color) url(../images/data_analyst.jpg) no-repeat
     calc(100% - 50px) center;
-  background-size: 600px 400px;
-  height: 473px;
+  background-size: 600px 375px;
+  height: 560px;
   font: 2rem / 1.6 var(--font-primary);
 }
 
-.hero h1 {
+.hero h3 {
   margin-top: 5rem;
   width: 35rem;
   color: #ffea00;
