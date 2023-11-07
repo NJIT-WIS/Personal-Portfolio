@@ -35,7 +35,6 @@ p {
   box-sizing: border-box;
 }
 body {
-  background: url("../images/ocean.webp");
   background-size: cover;
   color: var(--color-primary);
   font-size: var(--base-font-size);
