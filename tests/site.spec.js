@@ -71,6 +71,12 @@ test("Landing Page: Hero Section: Check for View Page Button", async ({
   await expect(page.locator(".pill-link")).toBeVisible();
 });
 
+test("Landing Page: Check Navigation Menu in Header", async ({ page }) => {
+  await page.goto(websiteURL);
+  const menuItemCount = await page.locator(".menu .menu-item").count();
+  expect(menuItemCount).toBe(3);
+});
+
 test("About Me Page: Check Profile Name", async ({ page }) => {
   await page.goto(resumeURL);
   await expect(page.locator(".sidebar h2")).toBeVisible();
@@ -146,6 +152,29 @@ test("AboutMe Page: Check SEO Meta Keywords", async ({ page }) => {
   await expect(metaKeywords).not.toBe("");
 });
 
+test("About Me Page: Check Main Content Area", async ({ page }) => {
+  await page.goto(resumeURL);
+  await expect(page.locator("body > .container > .main-content")).toBeVisible();
+});
+
+test("About Me Page: Check Skills Icons", async ({ page }) => {
+  await page.goto(resumeURL);
+  const skillsIconsCount = await page.locator(".skill-list li i").count();
+  await expect(skillsIconsCount).toBeGreaterThan(0);
+});
+
+/* This test checks that the experience company and role are visible on the page */
+test("About Me Page: Check Experience Role and Company", async ({ page }) => {
+  await page.goto(resumeURL);
+  await expect(page.locator(".experience-section h3")).toBeVisible();
+});
+
+test("About Me Page: Check Navigation Menu in Header", async ({ page }) => {
+  await page.goto(resumeURL);
+  const menuItemCount = await page.locator(".menu .menu-item").count();
+  expect(menuItemCount).toBe(3);
+});
+
 test("Project Page: Check SEO Meta Description", async ({ page }) => {
   await page.goto(projectURL);
   const metaDescription = await page.getAttribute(
@@ -165,23 +194,8 @@ test("Project Page: Check SEO Meta Keywords", async ({ page }) => {
   await expect(metaKeywords).not.toBe("");
 });
 /* This test checks that the main content area is present on the page */
-test("About Me Page: Check Main Content Area", async ({ page }) => {
-  await page.goto(resumeURL);
-  await expect(page.locator("body > .container > .main-content")).toBeVisible();
-});
 
 /* This test checks that the skills icons are present on the page */
-test("About Me Page: Check Skills Icons", async ({ page }) => {
-  await page.goto(resumeURL);
-  const skillsIconsCount = await page.locator(".skill-list li i").count();
-  await expect(skillsIconsCount).toBeGreaterThan(0);
-});
-
-/* This test checks that the experience company and role are visible on the page */
-test("About Me Page: Check Experience Role and Company", async ({ page }) => {
-  await page.goto(resumeURL);
-  await expect(page.locator(".experience-section h3")).toBeVisible();
-});
 
 test("Project Page: Project: Check Project Tttle", async ({ page }) => {
   await page.goto(projectURL);
@@ -194,7 +208,7 @@ test("Project Page: Check Project Cards", async ({ page }) => {
   await expect(cardCount).toBeGreaterThan(2);
 });
 
-test("Should have two a[href] elements", async ({ page }) => {
+test("Project Page: Should have two a[href] elements", async ({ page }) => {
   await page.goto(projectURL);
   const links = page.locator(".card a[href]");
 
@@ -202,20 +216,8 @@ test("Should have two a[href] elements", async ({ page }) => {
   await expect(links).toHaveCount(2);
 });
 
-test("Landing Page: Check Navigation Menu in Header", async ({ page }) => {
-  await page.goto(websiteURL);
-  const menuItemCount = await page.locator(".menu .menu-item").count();
-  expect(menuItemCount).toBe(3);
-});
-
-test("About Me Page: Check Navigation Menu in Header", async ({ page }) => {
-  await page.goto(resumeURL);
-  const menuItemCount = await page.locator(".menu .menu-item").count();
-  expect(menuItemCount).toBe(3);
-});
-
 test("Project Page: Check Navigation Menu in Header", async ({ page }) => {
-  await page.goto(resumeURL);
+  await page.goto(projectURL);
   const menuItemCount = await page.locator(".menu .menu-item").count();
   expect(menuItemCount).toBe(3);
 });
