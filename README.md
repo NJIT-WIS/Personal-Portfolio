@@ -1,3 +1,3 @@
-## Link to Website: https://njit-wis.github.io/midterm-portfolio-Crash105/
+## Link to Website: https://njit-wis.github.io/Personal-Portfolio/
 
 ![Figma Image](docs/figma.png)
